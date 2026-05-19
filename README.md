@@ -1,4 +1,4 @@
-# 🦴 Diagnosing the Rare: AI-Based Early Detection of Tumoral Calcinosis
+#  Diagnosing the Rare: AI-Based Early Detection of Tumoral Calcinosis
 
 > Leveraging Advanced Data Augmentation and Synthetic Lesion Simulation to Overcome Extreme Data Scarcity
 
@@ -8,7 +8,7 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 Tumoral Calcinosis (TC) is an ultra-rare condition characterized by progressive calcium phosphate deposits around large joints (hips, elbows, shoulders). Its rarity means:
 
@@ -20,7 +20,7 @@ This project tackles all three problems through a novel full-stack AI pipeline.
 
 ---
 
-## 🗂️ Project Pipeline
+##  Project Pipeline
 
 ```
 Raw Data → Data Augmentation → Lesion Simulation → Model Training (ResNet50) → Model Evaluation
@@ -28,7 +28,7 @@ Raw Data → Data Augmentation → Lesion Simulation → Model Training (ResNet5
 
 ---
 
-## 📁 Dataset
+##  Dataset
 
 The entire dataset was **built from scratch** by manually collecting TC X-ray images from:
 - [Radiopaedia](https://radiopaedia.org)
@@ -51,7 +51,7 @@ dataset/
 
 ---
 
-## 🔧 Strategies to Overcome Data Scarcity
+##  Strategies to Overcome Data Scarcity
 
 ### Strategy 1: Intensity-Preserving Data Augmentation
 
@@ -76,7 +76,7 @@ Since **zero early-stage TC images exist**, a heuristic-based simulation algorit
 
 ---
 
-## 🧠 Models
+##  Models
 
 ### Model 1 — Normal vs. TC Classifier
 
@@ -111,7 +111,7 @@ For images already classified as TC, this model determines the disease stage.
 
 ---
 
-## 📊 Results
+##  Results
 
 ### Model 1 — Normal vs. TC
 
@@ -135,7 +135,7 @@ For images already classified as TC, this model determines the disease stage.
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Clone the repository
 
@@ -173,7 +173,7 @@ normal       = '/content/TC_Project_New/dataset/raw/normal'
 
 ---
 
-## 🔬 Technical Stack
+##  Technical Stack
 
 | Component | Technology |
 |---|---|
@@ -187,7 +187,7 @@ normal       = '/content/TC_Project_New/dataset/raw/normal'
 
 ---
 
-## 🔮 Future Work
+##  Future Work
 
 - **Grad-CAM / Explainability** — Visualize what the model focuses on for clinical trust
 - **Multi-Modal Learning** — Incorporate patient biochemical data (e.g., phosphate levels)
@@ -196,7 +196,7 @@ normal       = '/content/TC_Project_New/dataset/raw/normal'
 
 ---
 
-## 📚 References
+##  References
 
 - Cossio, M. (2023). Augmenting Medical Imaging: A Comprehensive Catalogue of 65 Techniques. arXiv:2303.01178
 - Radiopaedia: [Tumoural Calcinosis](https://radiopaedia.org/articles/tumoural-calcinosis-1)
@@ -205,9 +205,9 @@ normal       = '/content/TC_Project_New/dataset/raw/normal'
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 **Hadeer Mohamed**  
 Computer Engineering Student | AI & Data Science  
 📧 hadeer.mohamed.eldesokey@gmail.com  
-🔗 [LinkedIn](https://linkedin.com) | [GitHub](https://github.com/Hadeer-Mohamed-Eldesokeyy)
+🔗 [LinkedIn](www.linkedin.com/in/hadeer-mohamed-eldesokey) | [GitHub](https://github.com/Hadeer-Mohamed-Eldesokeyy)

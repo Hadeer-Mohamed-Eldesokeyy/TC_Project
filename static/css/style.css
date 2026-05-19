@@ -1,0 +1,234 @@
+/* static/css/style.css */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --success-color: #2ecc71;
+    --warning-color: #f39c12;
+    --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e1ecf7;
+    color: var(--dark-color);
+    padding-top: 56px;
+}
+
+.hero-section {
+    background: var(--gradient);
+    color: white;
+    padding: 80px 0;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://media.istockphoto.com/id/1079683654/photo/radiography-of-right-elbow-ap-and-lateral-position-medical-concept.jpg?s=612x612&w=0&k=20&c=qiBHBHwnaxeVny-Dz_sbavnnMr8cEaLYd7C18PR3hTI=') center/cover no-repeat;
+    opacity: 0.15;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.upload-section {
+    padding: 40px 0;
+}
+
+.upload-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.upload-card:hover {
+    transform: translateY(-5px);
+}
+
+.upload-area {
+    border: 2px dashed #dee2e6;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-area:hover {
+    border-color: var(--secondary-color);
+    background-color: rgba(52, 152, 219, 0.05);
+}
+
+.upload-area.dragover {
+    border-color: var(--secondary-color);
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+.upload-icon {
+    font-size: 4rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.preview-container {
+    display: none;
+    margin-top: 30px;
+}
+
+.preview-img {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.image-info {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background: var(--gradient);
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:disabled {
+    opacity: 0.7;
+    transform: none;
+    box-shadow: none;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 1px solid #e9ecef;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.result-card {
+    display: none;
+    margin-top: 30px;
+}
+
+.normal-result {
+    border-left: 5px solid var(--success-color);
+}
+
+.abnormal-result {
+    border-left: 5px solid var(--warning-color);
+}
+
+.progress {
+    height: 10px;
+    margin-bottom: 10px;
+}
+
+.confidence-bar {
+    background: var(--gradient);
+}
+
+.footer {
+    background: var(--dark-color);
+    color: white;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+/* Loading spinner */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate-pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        min-height: 50vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
